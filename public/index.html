@@ -1,43 +1,600 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <title>Ravindu Dilusha</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+              <div id="root"></div>
+              <div class="logo">
+                <img src="./assets/img/logo.png" alt="">
+              </div>
+
+              <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                  <li class="nav__item">
+                    <a href="#Home" class="nav__link active-link">
+                      <i class="ri-home-5-line"></i>
+                      Home
+                    </a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                      <i class="ri-trophy-line"></i>
+                      skills
+                    </a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a href="#qualification" class="nav__link">
+                      <i class="ri-book-open-line"></i>
+                      qualification
+                    </a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a href="#services" class="nav__link">
+                      <i class="ri-briefcase-line"></i>
+                      services
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#projects" class="nav__link">
+                      <i class="ri-image-line"></i>
+                      Projects
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#contact" class="nav__link">
+                      <i class="ri-chat-3-line"></i>
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+                <!--Close button-->
+                <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+                </div>
+              </div>
+
+              <div class="nav__buttons">
+                  <!--Theme change button-->
+                  <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                  <!--Toggle button-->
+                  <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                  </div>
+              </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="Home">
+               <div class="home__container container grid section__border">
+                <div class="home__data">
+                  <h1 class="home__title">
+                    Hey there,<br>
+                    I'm <span>Ravindu Dilusha</span>
+                  </h1>
+                    <div class="home__blob grid">
+                      <div class="home__perfil">
+                        <img src="assets/img/perfill.png" alt="home perfil">
+                      </div>
+                  
+
+
+                   
+                    
+                  </div>
+
+                  <ul class="home__social">
+                    <a href="https://www.linkedin.com/in/ravindu-dilusha" target="_blank" class="home__social-link">
+                      <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a href="https://github.com/Ravidudilusha" target="_blank" class="home__social-link">
+                      <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://www.behance.net/ravidudilusha1" target="_blank" class="home__social-link">
+                      <i class="ri-behance-fill"></i>
+                    </a>
+                  </ul>
+                </div>
+
+                <!--==================== HOME INFO 1 ====================-->
+                <div class="home__info">
+                  <div>
+                  <p class="home__info-description">
+                    Currently, I am an Undergraduate student at the SLIT in BSc<br>
+                    (Hons) in Information Technology specializing in Information<br>
+                    Technology.This is my 3rd year 1 semester.I am a self-<br>motivated,responsible,creative and hard working person with
+                    <br>a great passion for the Frontend<br> Development and UI/UX Engineering industry.
+                  </p>
+                  </div>
+                
+                </div>
+
+                <!--==================== HOME INFO 2 ====================-->
+                <div class="div home__info">
+                  <div>
+                    <h3 class="home__info-title1">
+                      <span>Frontend Developer | UI/UX Designer</span>
+                    </h3>
+                  </div>
+                  <div>
+                    <h3 class="home__info-title3">
+                      <img src="assets/img/google.svg" alt=""class="google__img">
+                      Google Certified Professional UX Designer
+                    </h3>
+                  </div>
+
+                
+                <div class="about__container container grid">
+                  <img src="assets/img/profile image.JPG" alt="" class="about__img">
+                  <div class="about__details">
+                  <div>
+                    <h3 class="about__info-title"><span class="arrow" ><i class="ri-arrow-right-s-line"></i>Date of Birth :</span>28 May 2001</h3>
+                  </div>
+                  <div>
+                    <h3 class="about__info-title"><span class="arrow" ><i class="ri-arrow-right-s-line"></i>Phone :</span>+94771100242</h3>
+                  </div>
+                  <div>
+                    <h3 class="about__info-title"><span class="arrow" ><i class="ri-arrow-right-s-line"></i>City :</span>Moratuwa,Srilanka</h3>
+                  </div>
+                  <div>
+                    <h3 class="about__info-title"><span class="arrow" ><i class="ri-arrow-right-s-line"></i>Age :</span>22</h3>
+                  </div>
+                  <div>
+                    <h3 class="about__info-title"><span class="arrow" ><i class="ri-arrow-right-s-line"></i>Degree:</span>BSc (Hons) in Information Technology</h3>
+                  </div>
+                  <div>
+                    <h3 class="about__info-title"><span class="arrow" ><i class="ri-arrow-right-s-line"></i>Email :</span>ravidudilusha31@gmail.com</h3>
+                  </div>
+                  <div class="about__buttons">
+                    <a download="" href="assets/pdf/Ravidu.pdf" class="button__flex">
+                      Download CV<i class="ri-download-line button__icon"></i>
+                    </a>
+                  </div>
+
+                
+              </div>
+              </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">skills</h2>
+                <div class="skills__container container grid section__border">
+                  <!--==================== SKILLS 1 ====================-->
+                  <div class="skills__content">
+                    <h3 class="skills__title">
+                      <i class="ri-braces-line"></i>Tools and Technologies
+                    </h3>
+                    <div class="skills__info">
+                      <div class="skills__data">
+                        <div class="skills__blob">
+                          <img src="assets/img/html-1.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills__name">HTML</h3>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__blob">
+                          <img src="assets/img/css-3.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills__name">CSS</h3>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__blob">
+                          <img src="assets/img/logo-javascript.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills__name">JavaScript</h3>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__blob">
+                          <img src="assets/img/react-2.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills__name">React</h3>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__blob">
+                          <img src="assets/img/bootstrap-5-1.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills__name">bootstrap 5</h3>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__blob">
+                          <img src="assets/img/nodejs-icon.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills__name">node js</h3>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__blob">
+                          <img src="assets/img/adobe-photoshop-2.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills__name">Photoshop</h3>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__blob">
+                          <img src="assets/img/adobe-xd-1.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills__name">Adobe Xd</h3>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__blob">
+                          <img src="assets/img/figma-1.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills__name">Figma</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification" >
+                <h2 class="section__title">qualification</h2>
+                <div class="qualification__container container grid section__border">
+                  <!--==================== QUALIFICATION 1 ====================-->
+                  <div class="qualification__content">
+                    <h3 class="qualification__title">
+                      <i class="ri-pencil-line"></i>Education
+                    </h3>
+                    <div class="qualification__info">
+                      <div>
+                        <h3 class="qualification__name">
+                          BSc(Hons) in Information Technology<br>
+                          Specializing in Information Technology(SLIIT)
+                        </h3>
+                        <span class="qualification__year">2021-Present</span>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                      </div>
+                      <div>
+                        <h3 class="qualification__name">
+                          G.C.E ADVANCED LEVEL<br>
+                          Prince of Wales College Moratuwa<br>
+                          Maths Stream - 4S Passes
+                        </h3>
+                        <span class="qualification__year">2020</span>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                      </div>
+                      <div>
+                        <h3 class="qualification__name">
+                          G.C.E ORDINARY LEVEL<br>
+                          Prince of Wales College Moratuwa<br>
+                          4A 4B 1C
+                        </h3>
+                        <span class="qualification__year">2017</span>
+                        <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">What I Can Do</h2>
+                <div class="services__container container grid section__border">
+                  <div class="services__card">
+                    <i class="ri-survey-line"></i>
+
+                    <h2 class="services__title">
+                      UX Research
+                    </h2>
+                    <div class="services__border"></div>
+                  </div>
+                  <div class="services__card">
+                    <i class="ri-shape-line"></i>
+
+                    <h2 class="services__title">
+                      UX Design
+                    </h2>
+                    <div class="services__border"></div>
+                  </div>
+                  <div class="services__card">
+                    <i class="ri-quill-pen-line"></i>
+
+                    <h2 class="services__title">
+                      UI Design
+                    </h2>
+                    <div class="services__border"></div>
+                  </div>
+                  <div class="services__card">
+                    <i class="ri-code-box-line"></i>
+
+                    <h2 class="services__title">
+                      Frontend Development
+                    </h2>
+                    <div class="services__border"></div>
+                  </div>
+
+                </div>
+            </section>
+
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+              <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Most recent work</span>
+
+                <div class="container section__border">
+                  <div class="projects__container swiper">
+                    <div class="swiper-wrapper">
+
+                     <!--==================== PROJECT 1 ====================-->
+                      <div class="projects__content swiper-slide">
+                        <img src="assets/img/project 1.jpg" alt="projects image" class="projects__img">
+
+                        <div>
+                          <span class="projects__subtitle">Pizaa Hut Mobile App Redesign</span>
+                          <h1 class="projects__title">UI Design</h1>
+
+                          <a href="https://www.behance.net/gallery/161506183/Pizza-Hut-App-Redesign-Case-Study" class="projects__button">
+                            View Demo<i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--==================== PROJECT 2 ====================-->
+                      <div class="projects__content swiper-slide">
+                        <img src="assets/img/project 2.jpg" alt="projects image" class="projects__img">
+
+                        <div>
+                          <span class="projects__subtitle">Online Electronic App</span>
+                          <h1 class="projects__title">UI Design</h1>
+
+                          <a href="https://www.behance.net/gallery/159805423/Online-Electronic-Store-App-UIUX-Case-Study" class="projects__button">
+                            View Demo<i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--==================== PROJECT 3 ====================-->
+                      <div class="projects__content swiper-slide">
+                        <img src="assets/img/project 3.jpg" alt="projects image" class="projects__img">
+
+                        <div>
+                          <span class="projects__subtitle">Plant Shop Web Design</span>
+                          <h1 class="projects__title">Web UI</h1>
+
+                          <a href="https://www.behance.net/gallery/160515191/Plant-shop-web-ui-design-concept" class="projects__button">
+                            View Demo<i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--==================== PROJECT 4 ====================-->
+                      <div class="projects__content swiper-slide">
+                        <img src="assets/img/project 4.jpg" alt="projects image" class="projects__img">
+
+                        <div>
+                          <span class="projects__subtitle">Nike Landing Page Design Concept</span>
+                          <h1 class="projects__title">UI Design</h1>
+
+                          <a href="https://www.behance.net/gallery/158846951/Nike-Web-UI-Design-Concept" class="projects__button">
+                            View Demo<i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--==================== PROJECT 5 ====================-->
+                      <div class="projects__content swiper-slide">
+                        <img src="assets/img/project 5.jpg" alt="projects image" class="projects__img">
+
+                        <div>
+                          <span class="projects__subtitle">Online Food Ordering App Design Concept</span>
+                          <h1 class="projects__title">UI Design</h1>
+
+                          <a href="https://www.behance.net/gallery/158585537/Online-Food-Ordering-App" class="projects__button">
+                            View Demo<i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--==================== PROJECT 6 ====================-->
+                      <div class="projects__content swiper-slide">
+                        <img src="assets/img/project 6.jpg" alt="projects image" class="projects__img">
+
+                        <div>
+                          <span class="projects__subtitle">Food Landing Page Design Concept</span>
+                          <h1 class="projects__title">UI Design</h1>
+
+                          <a href="https://www.behance.net/gallery/159171673/Food-Landing-Page-UI-Design-Home-Page" class="projects__button">
+                            View Demo<i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <!--==================== PROJECT 7 ====================-->
+                      <div class="projects__content swiper-slide">
+                        <img src="assets/img/project 7.svg" alt="projects image" class="projects__img">
+
+                        <div>
+                          <span class="projects__subtitle">Pizza Ordering Web App</span>
+                          <h1 class="projects__title">React Web App</h1>
+
+                          <a href="https://github.com/Ravidudilusha/Restaurent-frontend-Web-App" class="projects__button">
+                            View Demo<i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                      
+                  </div>
+                  <!--Swiper arrows-->
+                  <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                  </div>
+
+                  <!--Swiper pagination-->
+                  <div class="swiper-pagination">
+
+                  </div>
+
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+              <h2 class="section__title">Contact Me</h2>
+              <span class="section__subtitle">Get in touch</span>
+
+              <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                  <h3 class="contact__title">
+                    <i class="ri-chat-3-line"></i>Talk to me
+                  </h3>
+
+                  <div class="contact__info">
+                    <div class="contact__data">
+                      <span class="contact__data-title">Email</span>
+                      <span class="contact__data-info">ravidudilusha31@gmail.com</span>
+                    </div>
+                    <div class="contact__data">
+                      <span class="contact__data-title">Whatsapp</span>
+                      <span class="contact__data-info">+94771100242</span>
+                      <a href="https://wa.link/5c2x4l" target="_blank" class="contact__button">
+                        write me<i class="ri-arrow-right-line"></i>
+                      </a>
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="contact__content">
+                  <h3 class="contact__title">
+                    <i class="ri-send-plane-line"></i>Write me your project
+                    
+                  </h3>
+
+                  <form action="" class="contact__form" id="contact-form">
+                    <div class="contact__form-div">
+                      <label for="" class="contact__form-tag">Names</label>
+                      <input type="text" name="user_name" required placeholder="Write your names" class="contact__form-input" id="contact-name">
+                    </div>
+
+                    <div class="contact__form-div">
+                      <label for="" class="contact__form-tag">Email</label>
+                      <input type="email" name="user_email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
+                    </div>
+
+                    <div class="contact__form-div contact__form-area">
+                      <label class="contact__form-tag">Project</label>
+                      <textarea name="user_project" placeholder="Write your project" id="contact-project" class="contact__form-input"></textarea>
+                    </div>
+
+                    <p class="contact__message" id="contact-message"></p>
+
+                    <button type="submit" class="contact__button">
+                        Submit <i class="ri-arrow-right-up-line"></i>
+                    </button>
+
+                  </form>
+
+
+                </div>
+              </div>
+                
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+          <div class="footer__container container">
+            <h1 class="footer__title"><span class="typing">Ravindu Dilusha</span></h1>
+            <p>UI/UX Designer & Frontend Developer</p>
+
+            <ul class="footer__list">
+              <li>
+                <a href="#Home" class="footer__link">Home</a>
+              </li>
+
+              <li>
+                <a href="#skills" class="footer__link">Skills</a>
+              </li>
+
+              <li>
+                <a href="#projects" class="footer__link">Projects</a>
+              </li>
+
+            </ul>
+
+            <ul class="footer__social">
+              <a href="https://www.linkedin.com/in/ravindu-dilusha" target="_blank" class="footer__social-link">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+
+              <a href="https://github.com/Ravidudilusha" target="_blank" class="footer__social-link">
+                <i class="ri-github-fill"></i>
+              </a>
+
+              <a href="https://www.behance.net/ravidudilusha1" target="_blank" class="footer__social-link">
+                <i class="ri-behance-fill"></i>
+              </a>
+
+            </ul>
+
+            <span class="footer__copy">
+              &#169 Copyright Ravindu Dilusha.All rights reserved
+            </span>
+          </div>
+            
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+          <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        
+        <!--=============== EMAIL JS ===============-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
