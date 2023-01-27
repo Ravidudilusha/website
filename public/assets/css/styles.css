@@ -1022,7 +1022,7 @@ body.dark-theme {
   .projects__container{
     width: 400px;
     overflow: hidden;
-    margin-left: -1.1cm;
+    margin-left: -.5cm;
   }
   .projects__container .swiper-button-prev{
     left: 2rem;
@@ -1055,14 +1055,14 @@ body.dark-theme {
   .about__info-title{
     font-size: var(--h3-font-size);
     font-family: var(--body-font);
-    font-weight: lighter;
+    font-weight: var(--font-medium);
     color: var(--title-color);
     text-indent: .1cm;
   }
   .about__info-title span{
     font-size: var(--h3-font-size);
     font-family: var(--body-font);
-    font-weight:lighter;
+    font-weight:var(--font-medium);
     color: var(--title-color);
   }
   .about__info-title {
@@ -1310,7 +1310,7 @@ body.dark-theme {
   
 }
 .projects__container{
-  width: 900px;
+  width: 990px;
 }
 }
 @media screen and (min-width: 1048px) {
@@ -1318,7 +1318,7 @@ body.dark-theme {
     margin-inline: auto;
   }
   .projects__container{
-    margin-left: 1cm;
+    margin-left: .3cm;
   }
   .skills__title{
     margin-left: -3cm;
