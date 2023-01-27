@@ -569,7 +569,7 @@ body.dark-theme {
 .qualification__img{
   width: 150px;
   position: absolute;
-  right: -3rem;
+  right: 3cm;
   bottom: 12rem;
   transform: rotate(15deg);
   opacity: .1;
@@ -1331,6 +1331,9 @@ body.dark-theme {
   }
   .services__container{
     margin-top: 1cm;
+  }
+  .qualification__img{
+    margin-left: 15cm;
   }
 }
 @media screen and (min-width:1200px) {
